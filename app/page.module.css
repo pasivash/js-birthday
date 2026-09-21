@@ -89,14 +89,14 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   padding: 16% 8%;
-  color: var(--black);
-  background: var(--ivory);
+  color: var(--ivory);
+  background: var(--graphite);
   text-align: center;
   transform: rotateY(180deg);
 }
 
 .kicker {
-  color: var(--red);
+  color: var(--red-bright);
   font-size: 3.2cqw;
   font-weight: 600;
   letter-spacing: 0.22em;
@@ -130,7 +130,7 @@
 .front h1 em {
   display: block;
   margin-top: 2cqw;
-  color: var(--red);
+  color: var(--red-bright);
   font-size: 28cqw;
   letter-spacing: -0.03em;
   line-height: 0.9;
@@ -162,7 +162,7 @@
   position: absolute;
   top: 1.2rem;
   left: 1.4rem;
-  color: var(--red);
+  color: var(--red-bright);
   content: attr(data-corner);
   font-family: var(--display);
   font-size: 1.3rem;
@@ -216,8 +216,7 @@
 }
 
 .light {
-  color: var(--black);
-  background: var(--ivory);
+  background: var(--graphite);
 }
 
 .index {
@@ -227,10 +226,6 @@
   font-weight: 600;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-}
-
-.light .index {
-  color: var(--red);
 }
 
 .title {
@@ -244,10 +239,6 @@
 
 .section em {
   color: var(--red-bright);
-}
-
-.light em {
-  color: var(--red);
 }
 
 /* ---------- Блоки ---------- */
@@ -443,14 +434,14 @@
 
 .lead {
   max-width: 34rem;
-  color: #55524c;
+  color: #a3a3a3;
 }
 
 .qa {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 3.5rem;
-  border-top: 1px solid rgba(20, 20, 19, 0.25);
+  border-top: 1px solid var(--line);
 }
 
 .qa > div {
@@ -459,11 +450,11 @@
 
 .qa > div + div {
   padding-left: 1.5rem;
-  border-left: 1px solid rgba(20, 20, 19, 0.25);
+  border-left: 1px solid var(--line);
 }
 
 .qa h3 {
-  color: var(--red);
+  color: var(--red-bright);
   font-family: var(--display);
   font-size: clamp(1.8rem, 3vw, 2.8rem);
   font-style: italic;
@@ -472,7 +463,7 @@
 
 .qa p {
   margin-top: 1rem;
-  color: #55524c;
+  color: #a3a3a3;
 }
 
 .finale {
@@ -587,7 +578,7 @@
   }
 
   .qa > div + div {
-    border-top: 1px solid rgba(20, 20, 19, 0.25);
+    border-top: 1px solid var(--line);
   }
 
   .finale footer {
