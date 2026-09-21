@@ -1,0 +1,30 @@
+:root {
+  --ink: #3a2a24;
+  --muted: #7a655c;
+  --paper: #f6efe6;
+  --card: #fffaf4;
+  --line: #d8c4b0;
+  --accent: #b4533a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  padding: 2rem 1.25rem;
+  color: var(--ink);
+  background: radial-gradient(circle at top, #fff8ef, var(--paper) 55%);
+  font-family: var(--font-outfit), system-ui, sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
