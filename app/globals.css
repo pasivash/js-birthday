@@ -1,10 +1,11 @@
 :root {
-  --ink: #3a2a24;
-  --muted: #7a655c;
-  --paper: #f6efe6;
-  --card: #fffaf4;
-  --line: #d8c4b0;
-  --accent: #b4533a;
+  --black: #090909;
+  --ivory: #f0eadf;
+  --red: #991120;
+  --red-bright: #d11b31;
+  --soft: #d8d1c6;
+  --dim: #8c8881;
+  --line: rgba(240, 234, 223, 0.18);
 }
 
 * {
@@ -13,18 +14,42 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  background: var(--black);
+}
+
 html,
 body {
   min-height: 100%;
 }
 
 body {
-  display: grid;
-  place-items: center;
-  padding: 2rem 1.25rem;
-  color: var(--ink);
-  background: radial-gradient(circle at top, #fff8ef, var(--paper) 55%);
-  font-family: var(--font-outfit), system-ui, sans-serif;
-  font-weight: 300;
+  color: var(--ivory);
+  background: var(--black);
+  font-family: var(--font-sans), Arial, sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--red-bright);
+  outline-offset: 4px;
+}
+
+::selection {
+  color: var(--ivory);
+  background: var(--red);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
